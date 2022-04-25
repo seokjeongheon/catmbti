@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-color: #525252;}
+        .item{float: left; margin: 10px; width: 150px;background-color: #fff;
+        border-radius: 4px;}
+        .big {width: 320px;}
+        .big> img {width: 320px;}
+        .item > .bottom {position: relative;padding: 0 10px;bottom: 18px;}
+        .item > .bottom > img {position: relative;left: 21px;}
+    </style>
+    <script> 
+        $(window).load(function(){
+           $('#masonry_container').masonry({
+               itemSelector:'.item',
+               columnWidth:170,
+               isAnimated:true
+           });
+           $('.item').live('click',function(){
+               $('#masonry_container').masonry('remove',$(this));
+               $('#masonry_container').masonry('reload');
+           });
+           $('#add_button').click(function(){
+               var $item = $('#masonry_container').children().
+               clone();
+                $('#masonry_container').append($item).masonry
+                ('appended',$item,true);
+           })
+        });       
+    </script>
+</head>
+<body>
+    <div id="masonry_container">
+        <div class="big"></div>
+        <img src="CJ.gif">
+        <p>zzzzzzzzzzzzzzzl</p>
+        <div class="button">
+            <img src="cj1.jpg">
+            <p>zzzzzzzzzzzzzzzl</p>
+        </div>
+        <div class="item">
+            <img src="cj3.jpg">
+        <div class="button">
+            <img src="cj4.jpg">
+            <p>지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다.</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj5.jpg">
+        <div class="button">
+            <img src="cj6.jpg">
+            <p>국무위원은 국무총리의 제청으로 대통령이 임명한다. 누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 대법관의 임기는 6년으로 하며, 법률이 정하는 바에</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj9.jpg">
+            <p>awwwwwwwwwwwwwwl</p>
+        <div class="button">
+            <img src="cj10.jpg">
+            <p>awwwwwwwwwwwwwwl</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj11.jpg">
+        <div class="button">
+            <img src="cj12.jpg">
+            <p>ffffffffffffffffffff</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj3.jpg">
+        <div class="button">
+            <img src="cj13.jpg">
+            <p>aeeeeeeeeeeee</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj4.jpg">
+        <div class="button">
+            <img src="cj1.jpg">
+            <p>arrrrrrrrrrrrrrrl</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="CJ.gif">
+        <div class="button">
+            <img src="cj6.jpg">
+            <p>ttttttttttttttttttt</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj10.jpg">
+        <div class="button">
+            <img src="cj9.jpg">
+            <p>alllllllllllll</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj4.jpg">
+        <div class="button">
+            <img src="cj8.jpg">
+            <p>oooooooooooooooooooooo</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj9.jpg">
+        <div class="button">
+            <img src="cj3.jpg">
+            <p>mmmmmmmmmmmmmmmmmmmmmmm</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="cj13.jpg">
+        <div class="button">
+            <img src="cj5.jpg">
+            <p>ahhhhhhhhhhhhhhhhhhhhhhhh</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

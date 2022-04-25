@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script> 
+      window.onload=function(){
+         var header = document.getElementById('myheader');
+         var headler = function(){
+           this.style.color = 'red';
+           this.removeEventListener('click',headler);
+         }
+         header.addEventListener('click',headler);
+        };
+    
+    </script>
+</head>
+<body>
+    <h1 id="myheader">
+       click
+    </h1>
+</body>
+</html>

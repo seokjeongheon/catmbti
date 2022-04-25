@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">//className로 바뀜 claa가  render=만들다
+  const cardstyle = {
+    border:'1px solid black',
+    padding:10,
+    margin: 10
+  }
+    function Card (props){
+      return <div style={cardstyle}>
+        <span> 2022 년4월 14일</span>
+        <hr />
+        <span>{props.author}</span>
+        {props.children}
+      </div>
+    }
+    const root = document.getElementById('root')
+    const elements = []
+    for(let index=0;index<10;index++){
+      elements.push(
+        <Card author="NoName">
+          <h1>loren ipum</h1>
+          <p>ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
+        </Card>
+      )
+    }
+    const element = <div>{element}</div>
+    ReactDOM.render(element,root)
+  </script>
+</body>
+</html>

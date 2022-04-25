@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>html5레이아웃</title>
+  <style>
+    
+    #wrap{width: 600px;margin: 0 auto;}
+    header{height: 60px;background-color: pink;}
+    aside{float:left;width: 200px;height: 300px;background-color: orange;}
+    section{float:right; width:400px;height: 300px;background-color: blue;}
+    footer{clear: both;height: 60px;background-color: aqua;}/*퍼센트도가능 */
+    header,aside,section,footer{font-size: 20px;text-align: center;
+    padding-top: 30px;}
+  </style> 
+</head>
+<body>
+  <div id="wrap">
+    <h2>div 요소를 이용한 레이아웃</h2> 
+    <header>상단 헤더</header>
+    <aside>사이드바</aside>
+    <section>메인 섹션</section>
+    <footer>하단풋터</footer>
+  </div>
+</body>
+</html>
+<!-- header상단헤더의영역사용
+nav내비게이션메인메뉴
+section독립적인섹션사용
+artticle블로그포스팅글영역을위함,요즘독립공간사용
+aside 섹션의좌측혹은우측사이브ㅏ
+footer 하단푸터에사용 -->

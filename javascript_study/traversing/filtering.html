@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('div').not('entro').css({'background-color':'red'
+        ,border:'2px solid red'})
+        //first():선택된 개체의 첫번째
+        //last():선택된 개체의 마지막
+        //eq():특정 번째의 개체 선택
+        //filter():특정 선택지를 골라서 선택
+        //not():선택지를 제외한 것을 선택
+      });
+    </script>
+    <style>
+      .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+</head>
+<body>
+  <h1>als;dfjal;sdjfa;slfjsa;l</h1>
+  <p>adlskfjaslk;fja;lskfj</p>
+  <br>
+  <div class="intro" style="border:  1px solid black;">
+    <p>als;djfla;sfjl;k</p>
+    <p>als;djfla;sfjl;k</p>
+  </div>
+  <br>
+  <div style="border:  1px solid black;"> 
+    <p>asdlfjasl</p>
+    <p>asdlfjasl</p>
+  </div>
+  <br>
+  <div style="border:  1px solid black;"> 
+    <p>asdlfjasl</p>
+    <p>asdlfjasl</p>
+  </div>
+</body>
+</html>

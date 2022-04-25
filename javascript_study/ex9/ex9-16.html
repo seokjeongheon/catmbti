@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQurey</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var object = {name : 'RinIanTta'};
+
+            //$.extend()메서드를 사용
+            $.extend(object,{
+                gender : 'Male',
+                part : 'soddd',
+                test : 'test'
+            });
+          
+            //출력
+            var output='';
+            $.each(object,function(key,item){
+                output += key + ':'+item+ '\n';
+            });
+            alert(output);
+        });
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

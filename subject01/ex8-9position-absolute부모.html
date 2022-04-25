@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>position:absolute부모요소존재</title> 
+  <style>
+    #parent{position: relative;width: 350px;height: 200px;
+      border: 1px solid red;
+      padding: 90px 0 0 60px;}
+    #a,#b,#c{width: 100px;height: 60px;background-color:
+      yellow;border: 1px
+      solid black;}
+      #A{position:absolute;left: 30px;top: 50px;}
+      #b{position:absolute;left: 70px;top: 70px;}
+      #c{position:absolute;left: 80px;top: 60px;} /*왼쪽 60 위에서 30에서 절대위치로 시작 */
+  </style>
+</head>
+<body>
+  <h3>절대 위치 지정(position:absolute,부모요소가 있는 경우)</h3>
+  <div id="parent">
+  <div id="a">요소 a</div>
+  <div id="b">요소 b</div>
+  <div id="c">요소 c</div>
+  </div>
+</body>
+</html>

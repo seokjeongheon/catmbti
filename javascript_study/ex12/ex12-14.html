@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $('#my_form').submit(function(){
+                //입력 양식의 value를 가져옴
+                var name = $('#name').val();
+                var password = $('#password').val();
+                //출력
+                alert(name+':'+password);
+                // 기본 이벤트 제거
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="my_form">
+        <table>
+            <tr>
+                <td>이름:</td>
+                <td><input type="text" mame="name" id="name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호:</td>
+                <td><input type="password" mame="password"
+                     id="password"/>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

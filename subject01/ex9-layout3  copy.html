@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>layout3</title> 
+  <style>
+    *{margin:0;padding: 0%;text-align: center;box-sizing: border-box;}
+    li{list-style: none;}
+    .box{width: 1000px;margin: 0 auto; border: 1px solid blue;}
+    .clearfix:after{content: "";display: block;clear: both;}
+    header{height: 100px;border: 1px solid red;}
+    header #top{height: 30px; border:1px solid red ;}
+    header #top_menu{float: right;border: 1px solid red;}
+    section #main_image{float: left;width: 750px;height: 200px;margin-top: 50px; border: 1px solid red;}
+    section aside{float:right;width:230px;height: 200px;margin-top: 50px;border: 1px solid red}
+    #main li {display: inline-block;margin-top: 20px;border:1px solid red;}
+    #main .item1{width: 206px;height: 250px;}
+    #main .item2{width: 250px;height: 250px;margin-left: 8px;}
+    footer {height: 100px;margin-top: 50px;}
+    footer #footer1{float:left;border: 1px solid red;}
+    footer #footer2{float:right;border: 1px solid red;}
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="top">
+      <div class="box">
+        <nav id="top_menu">상단메뉴</nav>
+      </div>
+    </nav>
+    <div class="box">
+      <nav id="main_menu">로고&메인메뉴&검색</nav>
+    </div>
+  </header> 
+  <section>
+    <div class="box">
+      <div id="main_image">메인이미지</div>
+      <aside>사이드바</aside>
+      <div id="main">
+        <ul>
+          <li class="item1">항목1</li>
+          <li class="item1">항목2</li>
+          <li class="item1">항목3</li>
+          <li class="item1">항목4</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="box"></div>
+    <div id="footer1">
+      푸터1
+    </div>
+    <div id="footer2">
+      푸터2
+    </div>
+  </footer>
+</body>
+</html>

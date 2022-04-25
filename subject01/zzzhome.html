@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시간표</title>
+  <style>
+    *{
+      border-collapse:collapse;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: black;
+      list-style: none;}
+  div span{
+    background-color: pink;}
+  .flexable{display: flex;}
+
+  div div:first-child{flex:2}
+  
+  div div{
+    flex:1;
+    background-color: orange;
+    border: 1px solid white;}
+  </style>
+</head>
+<body>
+ <div>
+   <span>span</span>
+   <span>span</span>
+ </div>
+
+ <div class="flexable">
+   <div>div</div>
+   <div>div</div>
+   <div>div</div>
+ </div>
+</body>
+</html>

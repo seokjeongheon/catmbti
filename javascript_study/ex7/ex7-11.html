@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Brower Object Model </title>
+    <script>
+       window.onload=function(){
+           //문서 객체 가져오기
+            var headers = document.getElementsByTagName('h1');
+            //출력
+            var output = '';
+            for (var i in headers){
+                output+= i +'\n';
+                // headers[i].innerHTML = 'with getElementById()';
+            }
+            alert(output);
+        }
+            
+    </script>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h1>Header2</h1>
+</body>
+</html>

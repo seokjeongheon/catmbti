@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>함수 :  내부함수</title>
+    <script> 
+        //윤씨가 만든 함수
+        //제곱을 구하는 함수              square 내가만든 함수를 안으로넣는다
+
+        function pythagoras(width,heigth){ 
+            function square(x){return x*x;} //여사이로
+            return Math.sqrt(square(width)+ square(heigth));
+        }
+        // 피타고라스 함수를 호출
+        alert(pythagoras(3,4));
+
+        // 연씨가 만든 함수
+
+        function square(width,heigth,hypotenuse){
+            if (width*width+ heigth*heigth == hypotenuse * hypotenuse){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

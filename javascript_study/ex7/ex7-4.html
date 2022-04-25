@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Brower Object Model </title>
+    <script>
+       window.onload=function(){
+           //변수선언
+           var header = document.createElement('h1');
+           var textNode=document.createTextNode('Hello DOM');
+           //노드의 연결
+            header.appendChild(textNode);
+            document.body.appendChild(header);
+       }
+          
+    </script>
+</head>
+<body>
+
+</body>
+</html>

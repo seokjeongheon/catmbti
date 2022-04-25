@@ -1,0 +1,11 @@
+h1{font-family: '바탕';color: red;}
+h3{font-family: '돋움';color: blue;}
+/*p{color: green;}*/
+*{margin:0;padding: 0%;text-align: center;}
+    header{height:130px;border: 1px solid red}
+    .box{width: 1110px;margin: 0 auto;border: 1px solid blue}
+    #main_image{height: 200px; border: 1px solid red;}
+    aside{float: left;width: 220px;height: 300px;border: 1px solid red;}
+    #main{float: right;width: 840px;height: 300px;border: 1px solid green}
+    footer{clear: both;height: 120px;border: 1px solid red}
+      

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <style>
+        
+    </style>
+    <script> 
+        $(document).ready(function(){
+            $('textarea').keyup(function(){
+                //남은 글자수를 구하기
+                var inputLength = $(this).var().length;
+                var maxLength
+                var remain = 50 - inputLength;
+                $('h1').html(remain);
+
+                if (inputLength > maxLength){
+                    // alert('50자가 초과되었습니다');
+                    // $(this).aaa('readonly',true);
+                    $(this).val($(this).val().substring(0,maxLength));
+                }
+                else{
+                    // $(this).aaa('readonly',false);
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <P>게시판 글쓰기 textarea</P>
+        <h1>50</h1>
+        <textarea cols="70" rows="5"></textarea>
+    </div>
+</body>
+</html>

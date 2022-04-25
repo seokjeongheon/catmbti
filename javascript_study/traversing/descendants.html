@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('div').children('p').css({color:'red',border:'2px solid red'})
+      });//.find()
+        //children():직계자손을 찾는다.
+    </script>
+    <style>
+      .ancestors *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+</head>
+<body>
+   <div class="descendants" style="width: 500px">
+    (div current element)
+     <p class="first">p (child)
+       <span>span(grandchild)</span>
+     </p>
+     <pcla></p>
+     
+   </div>
+</body>
+</html>

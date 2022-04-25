@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $('h1').click(function(){
+                $(this).next().toggle('slow',function(){
+                    alert('Effet End...');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>OPEN & CLOSE</h1>
+    <div>
+        <h1>asdflk;asjef</h1>
+        <p>alsd;fnjekl;asjvl;saje;lkvjmsa;e</p>
+    </div>
+    <h1>OPEN & CLOSE</h1>
+    <div>
+        <h1>asdflk;asjef</h1>
+        <p>alsd;fnjekl;asjvl;saje;lkvjmsa;e</p>
+    </div>
+    
+</body>
+</html>

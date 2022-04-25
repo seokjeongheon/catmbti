@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Brower Object Model </title>
+    <script>
+       window.onload=function(){
+           //변수선언
+           var img=document.createElement('img');
+           img.src='bread1.png';
+           img.width = 500;
+           img.height = 500;
+
+           //노드의 연결
+           document.body.appendChild(img);
+       }
+          
+    </script>
+</head>
+<body>
+
+</body>
+</html>

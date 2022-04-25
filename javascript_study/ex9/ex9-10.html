@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQurey</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            setTimeout(function(){
+                var value = $ ('select'>'option:selected').val();
+                alert(value);
+            },5000);
+        });
+    </script>
+</head>
+<body>
+    <select>
+        <option>apple</option>
+        <option>bag</option>
+        <option>cat</option>
+        <option selected>dog</option>
+        <option selected>elephant</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <style>.reverse{background-color: black;color: white;}</style>
+    <script> 
+        $(document).ready(function(){
+            //이벤트 연결&끊기
+            $('h1').click(function(){
+                $(this).html('click');
+                alert('이벤트 발생햇습니다.');
+                $(this).unbind();
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>HEADER - 0</h1>
+    <h1>HEADER - 1</h1>
+    <h1>HEADER - 2</h1>
+</body>
+</html>

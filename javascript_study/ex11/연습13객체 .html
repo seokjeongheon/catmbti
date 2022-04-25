@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <style>
+    
+  </style>
+<body>
+ <H1>Object</H1>
+ <h2>Create</h2>
+ <script>
+   var coworkrs = {
+     "programmer":"egoing",// 객체에 함수도 담을수잇음
+     'desinger':'leezche'
+   };
+   document.write("programmer : "+coworkrs.programmer+"<br>");
+   document.write('desinger : '+coworkrs.desinger+'<br>');
+   coworkrs.bookkeeper = "duru";
+   document.write('bookkeeper : '+coworkrs.bookkeeper+"<Br>")
+  coworkrs['date scientist'] = 'teeee';
+  document.write('date scientist : '+coworkrs['date scientist']+"<Br>")
+
+ </script>
+ <h2>Iterate</h2>
+ <script>
+   for(var key in coworkrs){
+     document.write(key + ' : '+coworkrs[key]+'<br>');
+   }
+ </script>
+
+
+ <h2>property & method</h2>
+ <script> 
+   coworkrs.showAll = function(){
+      for(var key in this){
+        document.write(key + ':' + this[key] + '<br>')
+      }
+   }
+   coworkrs.showAll();
+// //위아래같음
+//    function showAll(){
+
+//    }
+//객체에소속된변수 property & method
+               // desinger: leezche
+ </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+           //변수선언
+           var content=[
+               {name:'윤미안',region:'서울시 강서구'},
+               {name:'윤미인',region:'서울시 강북구'},
+               {name:'하리수',region:'서울시 은서구'},
+           ];
+           //문서 객체를 추가
+           $('div').append(function(index){
+               var item = content [index];
+               var item = '';
+               output += '<h1>'+item.name+'</h1>';
+               output += '<h2>'+item.region+'</h2>';
+               return output;
+           })
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

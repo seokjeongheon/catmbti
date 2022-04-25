@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>position:fixed</title> 
+  <style>
+     #box{width: 10px;height: 1000px;background-color: green;}/* .a는 class  */
+    .element{position: fixed;padding: 10px 20px ;color: white;}
+    #a{top :20px; left :20px;background-color: red;}
+    #b{top: 20px;right: 20px;background-color: green;}
+    #c{bottom: 20px;right: 20px;background-color: blue;}
+    #d{bottom: 20px;left: 20px;background-color: gray;}
+  </style>
+</head>
+<body>
+  <h3>절대 위치 지정(position:fixde)</h3>
+  <div id="box"></div>
+  <div id="a"class= element>요소 a</div><!-- <div class="element a">요소a</div> -->
+  <div id="b"class= element>요소 b</div>
+  <div id="c"class= element>요소c</div>
+  <div id="d"class= element>요소d</div>
+</body>
+</html>
+<!-- position:relitive=요소가 원래 잇던 자리를 기준으로 상대 위치를 지정
+position:abssolute=브라우저 화면의 원칭(또는부모요소)을기준으로 절대위치 지정
+position:fixed=브라우저 화면의 특정 위치에 요소를 고정 -->

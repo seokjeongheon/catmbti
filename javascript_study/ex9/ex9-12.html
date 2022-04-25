@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQurey</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            //변수선언
+            var array = [
+                {name:'naver',link:'https://www.naver.com/'},
+                {name:'youtube',link:'https://www.youtube.com/'},
+                {name:'upbit',link:'https://upbit.com/exchange?code=CRIX.UPBIT.KRW-BTC'},
+                {name:'google',link:'https://www.google.co.kr/'},
+            ];
+                //$.each()메서드를 사용
+            $.each(array,function(index,item){
+                var output = '';
+                output += '<a herf"'=item.link+'">';
+                output += '<h1>'+ item.name +'</h1>';
+                output += '</a>';
+                document.body.innerHTML+=output;
+            })
+        });
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>

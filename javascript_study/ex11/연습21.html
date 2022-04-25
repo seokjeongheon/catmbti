@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>object</h1>
+  <h2>create</h2>
+  <script>
+    var coworkers = {
+    'programmer':'egoing',
+    "designer":"leezche"
+    };
+    document.write('programmer : '+coworkers.programmer+'<br>')
+    document.write('designer : '+coworkers.designer+'<br>')
+    coworkers.bookkeeper='duru';
+    document.write('bookkeeper : '+coworkers.bookkeeper+'<br>')
+    coworkers['date zzzz'] = 'tahoe';
+    document.write('dayte zzzz : '+coworkers['date zzzz']+'<br>')
+  </script>
+  <h2>iterate 반복하다</h2>
+  <script>
+    for(var key in coworkers) {
+      document.write(key+' : '+coworkers[key]+'<br>')
+    }
+  </script>
+  <h2>property 변수 & method 객체에 소속된 함수 매소드</h2>
+  <script>//function showAll==
+    coworkers.showAll =function(){
+      for(var key in this) {
+      document.write(key+' : '+this[key]+'<br>')
+    }
+  }
+  coworkers.showAll();
+  </script>
+</body>
+</html>

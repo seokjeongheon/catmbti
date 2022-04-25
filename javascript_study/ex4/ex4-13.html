@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>반복문- if의 continue 예제</title>
+    <script> 
+      //변수선언
+      //0부터10까지짝수합구하는예제  홀수
+      var output = 0;
+
+      //반복문
+      for (var i = 1; i<=10; i++){
+        //조건문
+        if(i%2==1){
+          continue;
+        }
+        output+= i;
+      }
+      //출력
+      alert(output)
+    </script>
+</head>
+<body>
+</body>
+</html>

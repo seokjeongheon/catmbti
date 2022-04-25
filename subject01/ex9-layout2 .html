@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>layout2</title> 
+  <style>
+    *{margin:0;padding: 0%;text-align: center;}
+    .box{width: 1100;margin: 0% auto;text-align: center;}
+    .box::after{content: "";display: block;clear: both;}
+    header{height: 40px;border:1px solid red}
+    header #left_menu{float: left;border: 1px solid red;}
+    header #right_mebu{float: right; border: 1px solid red}
+    section #main_menu{height: 150px;border: 1px solid red}
+    section #product_list{height: 250px;border: 1px solid red}
+    #footer1{height: 80px;border: 1px solid red}
+    #footer2{height: 80px;border: 1px solid red}
+    #footer3{height: 80px;border: 1px solid red}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="box">
+      <nav id="left_menu">좌측메뉴</nav>
+      <nav id="right_menu">우측메뉴</nav>
+    </div>
+  </header> 
+  <section>
+    <div class="box">
+      <div id="main_image">메인이미지</div>
+      <div id="product_list">상품리스트</div>
+    </div>
+  </section>
+  <div class="box">
+    <section id="product_list">
+      상품 리스트
+    </section>
+  </div>
+<footer>
+  <div class="box1">푸터1</div>
+  <div class="box2">푸터2</div>
+  <div class="box3">푸터3</div>
+</footer>
+</body>
+</html>

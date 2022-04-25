@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>.reverse{background-color: black;color: white;}</style>
+    <script> 
+        $(document).ready(function(){
+            //이벤트 연결
+            $('h1').bind('click',function(){
+                $(this).html(function(index,html){
+                    return html + '+';
+                })
+            });
+            $('h1').hover(function(){
+                $(this).addClass('reverse');
+            },function(){
+                $(this).removeClass('reverse');
+            })
+            // $('h1').bind({
+            //     mouseenter:function(){$(this).addClass
+            //     ('reverse');},
+            //     mouseenter:function(){$(this).removeClass
+            //     ('reverse');}
+            // })
+        });
+    </script>
+</head>
+<body>
+    <h1>HEADER - 0</h1>
+    <h1>HEADER - 1</h1>
+    <h1>HEADER - 2</h1>
+</body>
+</html>

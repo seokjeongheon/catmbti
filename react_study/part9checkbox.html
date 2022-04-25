@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    class Cbox extends React.Component {
+      constructor(props){
+        super(props)
+        this.state = {
+          checked : false
+        }
+      }
+      render() {
+        //체크가 되지않앗을때
+        let mark = 'ㅁ'
+        let bstyle = {fontWeight:'normal'}
+        if(this.state.checked){
+          mark = '■'
+          bstyle={fontWeight:'bold'}
+        }
+
+        const had = (e) => {
+          const newValue = ! this.state.checked
+          this.setState({
+            checked: newValue
+          })
+        }
+        return(<div onClick={had} style={bstyle}>{mark}
+          {this.props.lable}</div>)
+      }
+    }
+    const element = <div>
+      <Cbox lable='apple'/>
+      <Cbox lable='apple'/>
+      <Cbox lable='apple'/>
+      <Cbox lable='apple'/>
+      </div>
+    ReactDOM.render(element,document.getElementById('root'))
+  </script>
+</body>
+</html>

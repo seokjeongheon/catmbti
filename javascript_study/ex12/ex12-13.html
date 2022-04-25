@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script> 
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                //변수선언
+                var scrollHeight = $(window).scrollTop()+$(window).
+                height();
+                var documentHeight = $(document).height();
+                console.log(scrollHeight);
+                console.log(documentHeight);
+                if (scrollHeight == documentHeight){
+                    for(var i=0; i<10;i++){
+                        $('<h1 style="color:red">Infinity Scroll</h1>')
+                        .appendTo('body');
+                    }
+                }
+            })
+            //테스트 위해 내부에 공간을 채움
+            for(var i=0; i<20;i++){
+                $('<h1>Infinity Scroll</h1>').appendTo('body');
+            }
+         });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

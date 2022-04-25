@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('h2').prevUntil('p').css({color:'red'
+        ,border:'2px solid red'})
+        //siblings():선택자를 제외한 형제를 선택하라.
+        //next():선택자의 바로 다음 객체를 선택하라.
+        //nextAll():선택자의 바로 다음 모든 객체를 선택하라.
+        //nexrUntil('p'):선택자의 바로 다음부터 선택할 개체를 제외한 후 선택하라.
+        //prev():선택자의 바로 이전 개체를 선택하라.
+        //prevAll():선택자의 바로 이전 개체를 선택하라.
+        //prevUntil():선택자의 바로 이전부터 선택할 개체를 제외한 후 선택하라.
+      });
+    </script>
+    <style>
+      .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+</head>
+<body class="siblings">
+  <div>div (parent)
+    <p>p</p>
+    <h2>h2</h2>
+    <h2>h2</h2>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3> 
+    <h2>h2</h2>
+    <p>p</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            //변수선언
+            $('div').html(function(index){
+                return '<h1>Header - '+index+'</h1>'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viwport"
+  content="width=device-width, initial-scale=1.0">
+  <title>ex10-7웹프로그래밍</title>
+  <style>
+     *{margin: 0; padding: 0;box-sizing: border-box;
+    }
+    li{list-style: none;}
+    .box{clear:both;width: 80%;height: 50%;
+    background-color:#eee ;margin: 0 auto;}
+    .col_1{width: 8.33%;}
+    .col_2{width: 16.66%;}
+    .col_3{width: 25%;}
+    .col_4{width: 33.33%;}
+    .col_5{width: 41.66%;}
+    .col_6{width: 50%;}
+    .col_7{width: 58.33%;}
+    .col_8{width: 66.66%;}
+    .col_9{width: 75%;}
+    .col_10{width: 83.33%;}
+    .col_11{width: 91.66%;}
+    .col_12{width: 100%;}
+    [class*="col_"]{
+      float: left;padding: 15px;
+    }
+   header {background-color: green;padding: 30px;color: #eee;height:80% ;}
+   .row {margin-top: 10px;}
+   .row:after {content: "";display: block;clear: both;}
+   .menu li{padding: 10px;margin-bottom: 12px;background-color: #3ea3d9;
+  color: #eee;box-shadow: 3px 3px 5px #aaa;}
+  .menu a:link, .menu a:visited, .menu a:hover, .menu a:active{
+    color: #fff;text-decoration: none;}
+  .menu li:hover{background-color: orange;}
+  .section p {line-height: 1.5;padding-top: 10px;}
+  footer{height: 80px;background-color: #eee;text-align: center;
+  font-size: 0.9em;padding-top: 30px;margin-top: 10px;}
+  @media only screen and (max-width:768px){
+    [calss*="col_"]
+    {width: 100%;}
+  </style>
+</head>
+<body>
+  <header>
+    <h3>웹 프로그래밍 강좌</h3>
+  </header>
+  <div class="row">
+    <nav class="col_3 menu">
+      <ul>
+        <li><a href=#>웹 페이지란?</a></li>
+        <li><a href=#>html/css</a></li>
+        <li><a href=#>php 프로그래밍</a></li>
+        <li><a href=#>자바스크립트/jquery</a></li>
+      </ul>
+    </nav>
+    <section class="col_9">
+      <h2>웹 페이지란?</h2>
+      <p>웹 페이지는 웹 서핑을 할 때 보는 각각의 화면을 말한다. 웹
+        페이지는 html 과 css 로 구성된 html문서와 관련된 이미지, 동영상,
+        음악 파일 등의 데이터 파일로 구성된다.
+      </p>
+      <p>웹 페이지는 웹 서핑을 할 때 보는 각각의 화면을 말한다. 웹
+        페이지는 html 과 css 로 구성된 html문서와 관련된 이미지, 동영상,
+        음악 파일 등의 데이터 파일로 구성된다.
+      </p>
+    </section>
+  </div>
+   <footer>
+     copyright 2021. (koreaedu) all rights resrved.
+   </footer>
+</body>
+</html>
