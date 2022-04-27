@@ -1,15 +1,9 @@
 import React from 'react'
-//css-in-js
-import styled from 'styled-compononts'
 
-function App() {
+const Result = () =>{
   return (
-    <div className="App">
-      <Home/>
-      <Question/>
-      <Result/>
-    </div>
-  );
+    <div>결과</div>
+  )
 }
 
-export default App;
+export default Result
